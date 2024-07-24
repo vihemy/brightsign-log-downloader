@@ -1,10 +1,14 @@
 # Brightsign LogDownloader using Local Diagnostic Web Server API
 
-This is a simple Python script that downloads the logs from a Brightsign player using the Local Diagnostic Web Server API. The script will download the logs from the player and save them to a file on the local machine.
+This is a simple Python script that downloads player logs* (located sd/logs on the player) from a Brightsign player using the Local Diagnostic Web Server API. The script will download the logs from the player and save them to a file on the local machine.
 
-Only works without authentication enabled on the player.
+*Note: This script download player logs from the sd/logs folder on the player, not the diagnostic log.
 
 ## Requirements
+**Brightsign Configuration**
+- Local Diagnostic Web Server API enabled on the player
+- Authentication disabled on the player
+
 **Libraries**:
 - requests
 - yaml
